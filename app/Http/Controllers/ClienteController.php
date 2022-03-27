@@ -20,7 +20,7 @@ class ClienteController extends Controller
 
      /**
 * @OA\Get(
-* path="/api/user/all",
+* path="/api/cliente/all",
 * summary="Obtener todos los usuarios",
 * description="Obtener todos los usuarios",
 * operationId="user-all",
@@ -78,7 +78,7 @@ class ClienteController extends Controller
 
      /**
 * @OA\Post(
-* path="/api/user/create",
+* path="/api/cliente/create",
 * summary="Crear un usuario",
 * description="Crear un usuario",
 * operationId="user-create",

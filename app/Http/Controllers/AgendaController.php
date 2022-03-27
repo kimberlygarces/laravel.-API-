@@ -20,7 +20,7 @@ class AgendaController extends Controller
      */
     /**
 * @OA\Get(
-* path="/api/schedule/all",
+* path="/api/agendas/all",
 * summary="Obtener todas las agendas",
 * description="Obtener todas las agendas",
 * operationId="schedule-all",
@@ -78,7 +78,7 @@ class AgendaController extends Controller
 
      /**
 * @OA\Post(
-* path="/api/schedule/create",
+* path="/api/agendas/store",
 * summary="Crear una agenda",
 * description="Crear una agenda",
 * operationId="schedule-create",
@@ -175,7 +175,7 @@ class AgendaController extends Controller
      */
     /**
 * @OA\Put(
-* path="/api/schedule/update/{id}",
+* path="/api/agendas/update/{id}",
 * summary="Editar una agenda",
 * description="Editar un agenda",
 * operationId="schedule-update",
