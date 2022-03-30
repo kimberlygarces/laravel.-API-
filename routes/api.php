@@ -19,9 +19,14 @@ Route::prefix('cliente')->group(function() {
     Route::post('store', 'ClienteController@store');
 });
 
+
+// ruta para los metodos de agendas
 Route::prefix('agendas')->group(function() {
+    // metodo para mostrar todas las agendas creadas
     Route::get('all', 'AgendaController@index');
+    // metodo para la creación de las agenadas - metodo que recibe los datos
     Route::post('store', 'AgendaController@store');
+    // metodo para editar agenda - tree el id de la agenda
     Route::put('update/{id}', 'AgendaController@update');
 
 
