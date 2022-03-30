@@ -62,8 +62,8 @@ class AgendaController extends Controller
 */
     public function index()
     {
-          //VAMOS A CONSULTAR TODOS LOS RECURSO DE LA BD
-        //traer los recursos
+     
+        // metodo para llamar todas las agendas creadas en la BASE DE DATOS
         $agendas = Agenda::all();
         return $agendas;
     }
