@@ -61,10 +61,11 @@ class ClienteController extends Controller
     
     public function index()
     {
-        //VAMOS A CONSULTAR TODOS LOS RECURSO DE LA BD
-        //traer los recursos
+        
         $clientes = Cliente::all();
         return $clientes;
+        //CONSULTA REALIZADA A LA TABLA CLIENTES PARA TRAER TODOS LOS DATOS
+
 
     }
 
