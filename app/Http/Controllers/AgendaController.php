@@ -137,7 +137,8 @@ class AgendaController extends Controller
 
     public function store(Request $request)
     {
-          //crear agenda
+          
+        //metodo que recibe los datos para la creación o asignacion de una nueva agenda
           $agendas = Agenda::create($request->all());
           return $agendas;
     }
