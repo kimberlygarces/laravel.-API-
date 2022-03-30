@@ -11,8 +11,11 @@ Route::post('me', 'AuthController@me');
 // Route::apiResource("cliente", "ClienteController");
 // Route::apiResource("agendas", "AgendaController");
 
+// ruta para los metodos del cliente
 Route::prefix('cliente')->group(function() {
+    // metodo all muestra todo los clientes creados
     Route::get('all', 'ClienteController@index');
+    // metodo store recibe todo los datos para la creación de cliente
     Route::post('store', 'ClienteController@store');
 });
 
