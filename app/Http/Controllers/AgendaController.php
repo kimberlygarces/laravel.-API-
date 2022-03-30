@@ -11,6 +11,8 @@ class AgendaController extends Controller
 
     public function __construct() {
         $this->middleware('jwt.validation');
+                // esta validacion se aplica en los metodos - para estos soliciten el token antes de autenticarse
+
     }
     
     /**
