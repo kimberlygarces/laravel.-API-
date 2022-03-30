@@ -13,7 +13,8 @@ class CreateClientesTable extends Migration
      */
     public function up()
     {
-        //crea las columnas de la base de datos
+        //en esta tabla se crear las columnas de la base de datos
+        // en clientes, donde se determinan los datos que deben ser creados
         Schema::create('clientes', function (Blueprint $table) {
             $table->id();
             $table->string('nombre');
@@ -22,6 +23,8 @@ class CreateClientesTable extends Migration
             $table->timestamps();
             $table->rememberToken();
 
+
+            
         });
     }
 
