@@ -18,6 +18,7 @@ class AuthController extends Controller {
      *     securityScheme="bearer_token",
      * )
     */
+    // siempre se deba llamar el constructor jwt
     public function __construct() {
         $this->middleware('jwt.validation', ['except' => ['login']]);
     }
@@ -58,12 +59,13 @@ class AuthController extends Controller {
     */
     public function login()
     {
+        // logiamos el usuario creado - con los datos insertados desde UserSeeder
         $credentials = request(['email', 'password']);
 
         if (! $token = auth('api')->attempt($credentials)) {
             return response()->json(['error' => 'Unauthorized'], 401);
         }
-
+// envia de respuesta el token unico del usuario
         return $this->respondWithToken($token);
     }
 

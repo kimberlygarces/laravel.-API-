@@ -11,6 +11,8 @@ class UserSeeder extends Seeder
      */
     public function run()
     {
+
+        // se insertan los datos del usuario princitapal en la bd
         User::insert(
             [
                 'name'     => 'LikeU',

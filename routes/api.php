@@ -3,7 +3,9 @@
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
+// ruta para login del usuario principal 
 Route::post('/login', 'AuthController@login');
+
 Route::post('logout', 'AuthController@logout');
 Route::post('me', 'AuthController@me');
 
