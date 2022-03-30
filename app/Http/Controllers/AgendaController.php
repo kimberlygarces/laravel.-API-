@@ -245,8 +245,10 @@ class AgendaController extends Controller
 
     public function update(Request $request,  $id)
     {   
+        // metodo para editar agenda
       $edit = Agenda::find($id)->pluck('estado')[0];
-    //   return $edit;
+    
+    //   la agenda solo puede ser editada en caso de estar programada
 
     if ($edit == "Programada") {
         $Agenda= Agenda::findOrFail($id);
@@ -258,8 +260,11 @@ class AgendaController extends Controller
         //   return $Agenda;
           return response()->json(['message' => 'Agenda actualizada exitosamente'], 201);
 
+        //Agenda actualizada exitosamente
     } else {
         return response()->json(['message' => 'No se pudo actualizar la agenda, el estado no es Programada'], 201);
+
+        // no puede ser programada
     }
     
 
