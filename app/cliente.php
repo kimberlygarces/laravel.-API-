@@ -6,6 +6,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class cliente extends Model
 {
-    //clase que extiende del modelo - pasamos los campos van hacer llenados por el modelo hacia la BD
+    // pasa los campos que seran adminsitrados por el modelo CLIENTES A LA BD clientes
+    
     protected $fillable = ["nombre","cedula","cumple"];
 }
