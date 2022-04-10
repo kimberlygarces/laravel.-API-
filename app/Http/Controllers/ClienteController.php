@@ -80,7 +80,7 @@ class ClienteController extends Controller
 
      /**
 * @OA\Post(
-* path="/api/cliente/create",
+* path="/api/cliente/store",
 * summary="Crear un usuario",
 * description="Crear un usuario",
 * operationId="user-create",
